@@ -3,7 +3,8 @@
   padding-bottom: 250rpx;
   position: relative;
 }
-.weather-bg{
+
+.weather-bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -24,4 +25,37 @@
   font-size: 40rpx;
   line-height: 56rpx;
   opacity: 0.65;
+}
+
+.timetips {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40rpx;
+  margin-bottom: 45rpx;
+}
+
+.timetips-icon {
+  height: 28rpx;
+  width: 36rpx;
+  margin-right: 10rpx;
+}
+
+.timetips-text {
+  font-size: 30rpx;
+  line-height: 42rpx;
+  opacity: 0.5;
+}
+
+.forecast-list {
+  display: flex;
+}
+
+.forecast-item {
+  display: flex;
+  flex-direction: column;
+  width:120rpx;
+  font-size: 36rpx;
+  line-height: 1.4;
+  flex-shrink: 0;
 }
