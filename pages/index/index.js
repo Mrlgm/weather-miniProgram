@@ -96,17 +96,17 @@ Page({
   },
 
   setToday(result) {
-    let data = new Date()
+    let date = new Date()
     let minTemp = result.today.minTemp
     let maxTemp = result.today.maxTemp
     this.setData({
       todayTemp: `${minTemp}° - ${maxTemp}°`,
-      todayData: `${data.getFullYear()}-${data.getMonth()+1}-${data.getDate()} 今天`
+      todayData: `${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()} 今天`
     })
   },
   onTapDayWeather(){
-    wx.showToast({
-      title: '',
+    wx.navigateTo({
+      url: '/pages/list/list',
     })
   }
 })
