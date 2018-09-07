@@ -25,7 +25,9 @@ Page({
     nowTemp: '',
     nowWeather: '',
     nowWeatherBg: '',
-    forecast: []
+    forecast: [],
+    todayTemp: '',
+    todayData: ''
   },
 
   /**
@@ -54,6 +56,7 @@ Page({
         let result = res.data.result
         this.setNow(result)
         this.setHourlyWeather(result)
+        this.setToday(result)
       },
       complete: () => {
         callback && callback()
@@ -89,6 +92,21 @@ Page({
     hourlyWeather[0].time = '现在'
     this.setData({
       forecast: hourlyWeather
+    })
+  },
+
+  setToday(result) {
+    let data = new Date()
+    let minTemp = result.today.minTemp
+    let maxTemp = result.today.maxTemp
+    this.setData({
+      todayTemp: `${minTemp}° - ${maxTemp}°`,
+      todayData: `${data.getFullYear()}-${data.getMonth()+1}-${data.getDate()} 今天`
+    })
+  },
+  onTapDayWeather(){
+    wx.showToast({
+      title: '',
     })
   }
 })
