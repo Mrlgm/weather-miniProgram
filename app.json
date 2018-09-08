@@ -6,7 +6,6 @@
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#ffffff",
-    "navigationBarTitleText": "weather",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
   }

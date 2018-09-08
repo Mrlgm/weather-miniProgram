@@ -1,7 +1,39 @@
 .weather-wrapper {
-  padding-top: 174rpx;
+  padding-top: 20rpx;
   padding-bottom: 250rpx;
   position: relative;
+}
+
+.location-wrapper{
+  margin-bottom: 60rpx;
+  font-size: 30rpx;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.5)!important;
+  padding: 0!important;
+  border: none!important;
+}
+
+.location{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-icon{
+  margin-right: 10rpx;
+  height: 30rpx;
+  width: 21rpx;
+}
+
+.location-text{
+  opacity: 0.5;
+}
+
+.location-tips{
+  margin-top: 10rpx;
+  opacity: 0.5;
+  text-align: center;
+  height: 42rpx;
 }
 
 .weather-bg {
